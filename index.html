@@ -12,13 +12,16 @@
 
 <body>
     <div class="row">
-        <div class="large-12 columns">
-            <h1>Welcome to Foundation</h1>
+        <div class="medium-6 columns">
+            <h1>Please Provide Your Details</h1>
             <form action="post">
                 E-mail:
                 <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"> Password:
-                <input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-                <input type="submit">
+                <input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"> Phone Number:
+                <input type="number" name="number" pattern="/(0|\+?254)7(\d){8}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <div class="blue">
+                    <input type="submit">
+                </div>
             </form>
         </div>
     </div>
